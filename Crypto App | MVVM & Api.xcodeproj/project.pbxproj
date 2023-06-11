@@ -13,6 +13,10 @@
 		ECE405B52A35C52F004321EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE405B32A35C52F004321EB /* Main.storyboard */; };
 		ECE405B72A35C52F004321EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECE405B62A35C52F004321EB /* Assets.xcassets */; };
 		ECE405BA2A35C52F004321EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ECE405B82A35C52F004321EB /* LaunchScreen.storyboard */; };
+		ECE405C22A35C7FD004321EB /* CrpyoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE405C12A35C7FD004321EB /* CrpyoTableViewCell.swift */; };
+		ECE405CA2A35F6C7004321EB /* CryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE405C92A35F6C7004321EB /* CryptoApp.swift */; };
+		ECE405CC2A35F7C9004321EB /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE405CB2A35F7C9004321EB /* WebService.swift */; };
+		ECE405CE2A360D3E004321EB /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE405CD2A360D3E004321EB /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		ECE405B62A35C52F004321EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECE405B92A35C52F004321EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ECE405BB2A35C52F004321EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE405C12A35C7FD004321EB /* CrpyoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrpyoTableViewCell.swift; sourceTree = "<group>"; };
+		ECE405C92A35F6C7004321EB /* CryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoApp.swift; sourceTree = "<group>"; };
+		ECE405CB2A35F7C9004321EB /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		ECE405CD2A360D3E004321EB /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,51 @@
 		ECE405AC2A35C52F004321EB /* Crypto App | MVVM & Api */ = {
 			isa = PBXGroup;
 			children = (
-				ECE405AD2A35C52F004321EB /* AppDelegate.swift */,
-				ECE405AF2A35C52F004321EB /* SceneDelegate.swift */,
-				ECE405B12A35C52F004321EB /* ViewController.swift */,
+				ECE405C62A35F5CA004321EB /* Service */,
+				ECE405C52A35F5B1004321EB /* ViewModel */,
+				ECE405C42A35F596004321EB /* Model */,
+				ECE405C32A35F58E004321EB /* View */,
 				ECE405B32A35C52F004321EB /* Main.storyboard */,
 				ECE405B62A35C52F004321EB /* Assets.xcassets */,
 				ECE405B82A35C52F004321EB /* LaunchScreen.storyboard */,
 				ECE405BB2A35C52F004321EB /* Info.plist */,
 			);
 			path = "Crypto App | MVVM & Api";
+			sourceTree = "<group>";
+		};
+		ECE405C32A35F58E004321EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ECE405AD2A35C52F004321EB /* AppDelegate.swift */,
+				ECE405AF2A35C52F004321EB /* SceneDelegate.swift */,
+				ECE405B12A35C52F004321EB /* ViewController.swift */,
+				ECE405C12A35C7FD004321EB /* CrpyoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ECE405C42A35F596004321EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ECE405C92A35F6C7004321EB /* CryptoApp.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		ECE405C52A35F5B1004321EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ECE405CD2A360D3E004321EB /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ECE405C62A35F5CA004321EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				ECE405CB2A35F7C9004321EB /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +182,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECE405CC2A35F7C9004321EB /* WebService.swift in Sources */,
 				ECE405B22A35C52F004321EB /* ViewController.swift in Sources */,
 				ECE405AE2A35C52F004321EB /* AppDelegate.swift in Sources */,
+				ECE405CE2A360D3E004321EB /* CryptoViewModel.swift in Sources */,
+				ECE405CA2A35F6C7004321EB /* CryptoApp.swift in Sources */,
 				ECE405B02A35C52F004321EB /* SceneDelegate.swift in Sources */,
+				ECE405C22A35C7FD004321EB /* CrpyoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
